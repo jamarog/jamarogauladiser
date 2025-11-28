@@ -11,8 +11,7 @@ from flask_cors import CORS
 
 # Configuración de la app Flask
 app = Flask(__name__)
-CORS(app)  # habilita CORS para toda la app
-'''
+#CORS(app)  # habilita CORS para toda la app
 CORS(app, resources={
         r"/*": {
             "origins": "*",
@@ -20,7 +19,6 @@ CORS(app, resources={
             "allow_headers": ["Content-Type", "Authorization"],
         }
     })
-'''
 app.config["SQLALCHEMY_DATABASE_URI"] = (
     "postgresql+psycopg2://jamaroguevara:Cb8npR5KCFVcUjRekiXd4eNVsGofnOzr@dpg-d432g0buibrs73ajps40-a.oregon-postgres.render.com/jamarog_db"
 )
