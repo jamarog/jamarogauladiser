@@ -19,8 +19,9 @@ CORS(app, resources={
             "allow_headers": ["Content-Type", "Authorization"],
         }
     })
+
 app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "postgresql+psycopg2://jamaroguevara:Cb8npR5KCFVcUjRekiXd4eNVsGofnOzr@dpg-d432g0buibrs73ajps40-a.oregon-postgres.render.com/jamarog_db"
+    "postgresql+psycopg2://admin:MBG8H6PzQrl00aIfbuHjI3hhFcDl09v5@dpg-d4msuk63jp1c73a6ui10-a.oregon-postgres.render.com/jamarogdbauladiser"
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
